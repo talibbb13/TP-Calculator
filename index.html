@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="input-result">
+      <input type="text" id="input" disabled>
+    </div>
+
+    <div class="buttons">
+      <div class="row">
+        <button onclick="cleared()" class="spcBtn">C</button>
+        <button onclick="press('%')" class="spcBtn">%</button>
+        <button onclick="deleted()" class="spcBtn">◀️</button>
+        <button onclick="press('/')" class="spcBtn">÷</button>
+      </div>
+
+      <div class="row">
+        <button onclick="press(7)">7</button>
+        <button onclick="press(8)">8</button>
+        <button onclick="press(9)">9</button>
+        <button onclick="press('*')" class="spcBtn">×</button>
+      </div>
+
+      <div class="row">
+        <button onclick="press(4)">4</button>
+        <button onclick="press(5)">5</button>
+        <button onclick="press(6)">6</button>
+        <button onclick="press('-')" class="spcBtn">–</button>
+      </div>
+
+      <div class="row">
+        <button onclick="press(1)">1</button>
+        <button onclick="press(2)">2</button>
+        <button onclick="press(3)">3</button>
+        <button onclick="press('+')" class="spcBtn">+</button>
+      </div>
+
+      <div class="row">
+        <button onclick="press('00')">00</button>
+        <button onclick="press(0)">0</button>
+        <button onclick="press('.')">.</button>
+        <button onclick="equal()" class="equal-btn">=</button>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

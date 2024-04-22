@@ -1,0 +1,78 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ font-family: monospace;
+ overflow: hidden;
+}
+
+.calculator {
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: black;
+
+}
+
+.input-result {
+ position: relative;
+}
+
+.input-result input {
+ width: 100vw;
+ height: 40vh;
+ outline: none;
+ background-color: black;
+ font-size: 150px;
+ color: white;
+ text-align: right;
+ border: none;
+ padding: 50% 5% 10% 5%;
+ 
+ transition: transform 0.3s ease-in-out;
+ transform-origin: right;
+}
+
+.buttons {
+ width: 100vw;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}
+
+.row {
+ display: flex;
+ justify-content: space-between;
+ width: 100vw;
+ padding: 0px 3vw;
+}
+
+.buttons button {
+ height: 20vw;
+ width: 20vw;
+ font-size: 80px;
+ margin-bottom: 5vw;
+ background-color: rgba(46, 46, 46, 0.69);
+ color: white;
+ border: none;
+ border-radius: 100%;
+}
+
+.spcBtn {
+ background-color: #4F4F4F !important;
+ font-size: 100px !important;
+}
+
+.equal-btn {
+ background-color: rgba(245, 143, 66, 1) !important;
+}
+
+.input-result.result-active input {
+  transform: translateX(+100%);
+}
